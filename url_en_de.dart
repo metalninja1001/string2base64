@@ -9,9 +9,9 @@ void main() {
 
   final deString = decryptAES(enString, key);
 
-  print('Original URL: $string');
-  print('Encrypted URL: $enString');
-  print('Decrypted URL: $deString');
+  print('Original String: $string');
+  print('Encrypted String: $enString');
+  print('Decrypted String: $deString');
 }
 
 String encryptAES(String data, String key) {
@@ -20,7 +20,6 @@ String encryptAES(String data, String key) {
 }
 
 String decryptAES(String encryptedData, String key) {
-  // Use a proper decryption algorithm (e.g., AES)
   final encryptedBytes = base64.decode(encryptedData);
   final decryptedBytes = encryptedBytes.map((byte) => byte ^ key.codeUnitAt(0)).toList();
   return utf8.decode(decryptedBytes);

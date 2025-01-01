@@ -1,9 +1,13 @@
 import 'dart:convert';
-import 'package:crypto/crypto.dart';
+import 'dart:io';
 
 void main() {
-  final string = 'YOUR-STRING';
-  final key = 'my_secret_key'; // Replace with a secure key
+  print('Enter the string you would like to encrypt and decrypt');
+  String? inputString = stdin.readLineSync();
+  final string = '$inputString'; // 'YOUR-STRING'
+  print('Enter the key you would like to use to encrypt and decrypt the string');
+  String? inputKey = stdin.readLineSync();
+  final key = '$inputKey'; // Replace with a secure key
 
   final enString = encryptAES(string, key);
 

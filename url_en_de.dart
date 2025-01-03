@@ -4,7 +4,7 @@ import 'dart:io';
 void main(String) {
   print('''
 #########################################################
-                      S2B64
+                      S2B64™
 A dart program used to convert an ascii string to base64
 #########################################################
 ''');

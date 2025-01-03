@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-void main(List<String> arguments) {
+void main(String) {
   print('''
 #########################################################
                       S2B64

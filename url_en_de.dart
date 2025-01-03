@@ -35,6 +35,7 @@ Original String: $string
 Encrypted String : $enString
 Decrypted String: $deString
 ########################################################''');
+  // OLD CODE - print('Original String: $string');
   // OLD CODE - print('Encrypted String: $enString');
   // OLD CODE - print('Decrypted String: $deString');
 }

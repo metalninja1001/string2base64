@@ -11,18 +11,18 @@ A dart program used to convert an ascii string to base64
   stdout.write("""
 #########################################################
 Enter the string you would like to encrypt and decrypt: """);
-  //print('Enter the string you would like to encrypt and decrypt');
+  // OLD CODE - print('Enter the string you would like to encrypt and decrypt');
   var inputString;
   inputString = inputString ?? stdin.readLineSync();
-  //String? inputString = stdin.readLineSync();
+  // OLD CODE - String? inputString = stdin.readLineSync();
   final string = '$inputString'; // 'YOUR-STRING'
   stdout.write("""
 #########################################################
 Enter the key you would like to use to encrypt and decrypt the string: """);
   var inputKey;
   inputKey = inputKey ?? stdin.readLineSync();
-  //print('Enter the key you would like to use to encrypt and decrypt the string');
-  //String? inputKey = stdin.readLineSync();
+  // OLD CODE - print('Enter the key you would like to use to encrypt and decrypt the string');
+  // OLD CODE - String? inputKey = stdin.readLineSync();
   final key = '$inputKey'; // Replace with a secure key
 
   final enString = encryptAES(string, key);
@@ -35,8 +35,8 @@ Original String: $string
 Encrypted String : $enString
 Decrypted String: $deString
 ########################################################''');
-  //print('Encrypted String: $enString');
-  //print('Decrypted String: $deString');
+  // OLD CODE - print('Encrypted String: $enString');
+  // OLD CODE - print('Decrypted String: $deString');
 }
 
 String encryptAES(String data, String key) {
